@@ -1,0 +1,23 @@
+/* class는 .찍고 작명, 특정 tag를 꾸미려면 tag 자체로 작명, id는 #찍고 작명 */
+/* 우선 순위는 style - id - class - tag 순 */
+.profile_image {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.profile_name {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold
+}
+
+.profile_who1 {
+  text-align: center;
+}
+
+.profile_who2 {
+  color: blue;
+}
