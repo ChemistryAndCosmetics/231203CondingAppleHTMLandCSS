@@ -1,0 +1,27 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left_text {
+  width: 80%;
+  height: 200px;
+  float: left;
+}
+
+.left_profile {
+  width: 50px;
+  float: left;
+}
+
+.left_words {
+  float: left;
+}
+
+.right_image {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(255, 255, 200);
+  float: left;
+}
