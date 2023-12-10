@@ -1,0 +1,42 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left_text {
+  width: 80%;
+  height: 200px;
+  float: left;
+}
+
+.left_profile {
+  width: 50px;
+  float: left;
+}
+
+.left_words {
+  float: left;
+}
+
+.right_image {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(255, 255, 200);
+  float: left;
+}
+
+.navbar li {
+  /* 선택자 내 공백은 그 안에 있는 자손들 확인. >쓰면 직게 자손만 */
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+}
