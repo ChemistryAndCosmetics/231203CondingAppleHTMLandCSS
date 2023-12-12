@@ -1,0 +1,53 @@
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpg);
+    /* ../는 상위폴더로 이동 */
+  background-size: cover;
+  /* cover쓰면 알아서 빈공간없이 채워짐 */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  /* 안에 글씨있으면 글씨에도 필터 적용 */
+  text-align: center;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+  /* padding등 없이 테두리겹치면 마진콜랩스 버그 일어남 */
+}
+
+.sub-title {
+  color: white;
+  font-size: 20px;
+}
+
+.main-button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  /* 좌표이동하려면 relative 필요하고 이 경우는 원위치가 기준,
+  fixed쓰면 고정. absolute써도 이동가능하나 relative있는 부모가 기준,
+  포지션쓰면 공중에 뜸 */
+  bottom: 20px;
+  right: 20px;
+  /* 우측하단에 버튼 고정 */
+  /* left 0 right 0 margin auto width 적당히 쓰면 absolute 써도 가운데 배치 가능 */
+}
+
+.eclipse {
+  width: 500px;
+  margin: auto;
+  background-color: skyblue;
+  text-align: center;
+  padding: 10px;
+  /* 마진은 현재요소주변의 여백공간, 패딩은 콘텐츠와테두리사이 여백공간 */
+  position: relative;
+  margin-top: -20px;
+}
