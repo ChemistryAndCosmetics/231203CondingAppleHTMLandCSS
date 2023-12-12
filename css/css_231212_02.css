@@ -1,0 +1,65 @@
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpg);
+    /* ../는 상위폴더로 이동 */
+  background-size: cover;
+  /* cover쓰면 알아서 빈공간없이 채워짐 */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  /* 안에 글씨있으면 글씨에도 필터 적용 */
+  text-align: center;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+  /* padding등 없이 테두리겹치면 마진콜랩스 버그 일어남 */
+}
+
+.sub-title {
+  color: white;
+  font-size: 20px;
+}
+
+.main-button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  /* 좌표이동하려면 relative 필요하고 이 경우는 원위치가 기준,
+  fixed쓰면 고정. absolute써도 이동가능하나 relative있는 부모가 기준,
+  포지션쓰면 공중에 뜸 */
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  /* left 0 right 0 margin auto width 적당히 쓰면 absolute 써도 가운데 배치 가능 */
+  z-index: 5;
+  /* z인덱스 높을수록 더 위에 존재 */
+}
+
+.eclipse {
+  width: 70%;
+  /* 부모위드스에 따라 결정, 이경우는 body를 따라감. 반응형레이아웃 */
+  max-width: 600px;
+  /* 여기서의 width는 컨텐트 영역을 의미하므로 실제 width와 무관 */
+  box-sizing: border-box;
+  /* 이렇게 넣으면 max-width가 패딩과 보더도 포함
+  만약 div { box-sizing: border-box; 넣으면 모든 div에 적용되어
+  편리하게 사용할 수 있음, body { margin: 0px; 이런 것도 좋음
+  normalize.css이런거 검색해서 호환성 문제 미리 해결하는 것 가능*/
+  margin: auto;
+  background-color: skyblue;
+  text-align: center;
+  padding: 10px;
+  /* 마진은 현재요소주변의 여백공간, 패딩은 콘텐츠와테두리사이 여백공간 */
+  position: relative;
+  top: -50px;
+}
