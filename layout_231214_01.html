@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="css/css_231214_01.css" rel="stylesheet">
+</head>
+<body style="margin: 0px;">
+  <!-- 기본적으로 body에 마진있으므로 -->
+  <div class="main-background">
+    <h4 class="main-title">신발사세요</h4>
+    <p class="sub-title">멋진 신발 싸게 파니까 어서 구입하세요</p>
+    <button class="main-button">구매</button>
+  </div>
+  <div class="eclipse">
+    <p>배경과 겹치는 박스를 만들자</p>
+  </div>
+
+  <br>
+
+  <div class="eclipse" style="padding: 50px">
+    <!-- 패딩이 있어 box-sizing: border-box 없으면 박스폭 맥스 설정한 600 넘어감 -->
+    <p>배경과 겹치는 박스를 만들자</p>
+  </div>
+
+  <form action="경로~" method="get">
+    <input type="text" class="text-input">
+    <!-- value는 기본값 placeholder는 배경글자 name은 어떤 인풋인지 표기-->
+    <input type="submit">
+    <!-- <button type="submit">전송</button> 이것도 전송버튼 만드는 법-->
+    <select>
+      <option>아무거나</option>
+      <option>골라보세요</option>
+    </select>
+  </form>
+</body>
+</html>

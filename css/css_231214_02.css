@@ -1,0 +1,57 @@
+div, input, textarea {
+  box-sizing: border-box;
+}
+/* 복붙할 필요 없어짐 */
+
+body {
+  margin: 0px;
+}
+
+.background {
+  background-color: black;
+  padding: 20px
+}
+
+.frontground {
+  background-color: white;
+  padding: 20px;
+  width: 75%;
+  max-width: 550px;
+  margin: auto;
+  /* 가운데 정렬 */
+}
+
+.whole1 {
+  width: 100%;
+  padding: 8px;
+}
+
+.form-input {
+  width: 100%;
+  /* 실제 width는 100%보다 크게 되므로 box-sizing 필요 */
+  padding: 5px;
+  /* 칸 내부에 대한 패딩임 */
+  font-size: 15px;
+  border : 1px solid black;
+  border-radius: 3px;
+}
+
+.half2 {
+  width: 50%;
+  float: left;
+  padding: 8px;
+}
+
+.y-button {
+  padding: 8px;
+  width: 100px;
+  background-color: yellow;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  float: right;
+  /* 이렇게도 가능함 padding: 10px;
+  display: block;
+  margin-left: auto; */
+}
