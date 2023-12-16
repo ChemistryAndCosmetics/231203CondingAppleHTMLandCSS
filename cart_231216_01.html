@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="css/css_231216_01.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <!-- <div style="display: table">
+      <div style="display: table-row">
+      <div style="display: table-cell">
+      이렇게 쓰면 table과 비슷. 하지만 그냥 table 쓰자 -->
+    <table>
+      <!-- 제목행은 thead 안에
+      일반행은 tbody 안에 -->
+      <thead>
+        <tr>
+          <th><p>1234</p><p>1234</p></th>
+          <td style="vertical-align: top;">2222</td>
+          <!-- 상하정렬 하는 법 -->
+          <td>3333</td>
+          <!-- tr가로줄 td세로줄 th는 제목용 tr먼저만들기-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+  <div>
+    <p style="font-size: 50px">greeting<span style="font-size: 20px; vertical-align: bottom;">안녕</span></p>
+    <!-- vertical-align은 inline/inline-block 요소 간 세로 정렬 시 씀 -->
+    <!-- display: inline은 항상 옆으로 채워지는 폭과 너비가 없는 요소. span이 그 예시. 즉, 반복해서 쓸 때 내려가지 않고 옆에 붙음 -->
+    <!-- vertical-align 용도는 다양함. super, sub 등도 있음 -->
+  </div>
+  <div>
+    <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32"><span style="vertical-align: top;">image with a default alignment.</span>    
+  </div>
+</body>
+</html>

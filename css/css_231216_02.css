@@ -1,0 +1,77 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  /* 테이블은 기본적으로 틈이 있으므로 이를 없앰 */
+  color: gray;
+}
+
+.ysc th, .ysc td {
+  padding : 20px;
+  border-bottom: 1px solid skyblue;
+  border-top: 1px solid skyblue;
+  /* 특정 보더만 스타일 지정 */
+}
+
+.background {
+  width: 100%;
+  background-color: skyblue;
+  padding: 25px;
+}
+
+.ysc {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.long {
+  width: 280px;
+  /* th, td에서 쓸 때는 max-width 와 유사 */
+  /* 한 행에서만 설정해도 다른 행도 적용 */
+  /* .ysc th:nth-child(2) 이렇게 적용해도 특정 요소만 설정 가능 (ex 2번째 th) */
+}
+
+.brand {
+  color: black;
+  font-weight: bold;
+}
+
+.amount {
+  text-align: center;
+}
+
+.totalprice {
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+.price {
+  text-align: right;
+}
+
+.additional {
+  margin-top: 10px;
+}
+
+.text {
+  text-decoration: underline;
+}
+
+.button {
+  float: right;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}

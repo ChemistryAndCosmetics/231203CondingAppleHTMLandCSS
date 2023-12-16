@@ -1,0 +1,8 @@
+td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  /* 테이블은 기본적으로 틈이 있으므로 이를 없앰 */
+}
