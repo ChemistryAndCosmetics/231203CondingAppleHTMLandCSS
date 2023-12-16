@@ -1,0 +1,40 @@
+.button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* 버튼에 마우스 올릴 때 모양 달라짐 */
+}
+
+.button:hover {
+  background-color: chocolate;
+}
+/* pseudoclass에 관한 내용, 마우스 올릴 때는 hover */
+
+.button:active {
+  background-color: chocolate;
+}
+/* 클릭중일때는 active, 커서찍혔을 때 focus */
+/* hover focus active 순서로 해야함 */
+/* background말고도 다양한 스타일 */
+
+.inputtest:hover {
+  border-bottom: 2px solid red;  
+}
+
+.customlink {
+  text-decoration: none;
+
+}
+
+.customlink:link {
+  /* 방문전링크에 대해 */
+  color: skyblue
+}
+
+.customlink:visited {
+  /* 방문후링크에 대해 */
+  color: red
+}

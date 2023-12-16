@@ -1,0 +1,24 @@
+.f-small {
+  font-size: 12px;
+}
+
+.f-mid {
+  font-size: 16px;
+}
+
+/* 스타일 1,2개만 들어있는 utility class 미리 만들어두면 편함 */
+
+.mainbtn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.redbtn {
+  background: red;
+}
+
+.bluebtn {
+  background: blue;
+}
