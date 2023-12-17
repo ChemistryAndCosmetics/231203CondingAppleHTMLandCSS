@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="../css기초/231214_css_02.css" rel="stylesheet">
+</head>
+<!-- <body style="margin: 0px;"> -->
+  <div class="background">
+    <div class="frontground">
+      <form>
+        <div class="whole1">
+          <h3>Contact Us</h3>
+          <p>Your Email</p>
+          <input class="form-input" type="email" placeholder="email@example.com">
+        </div>
+        <div class="half2">
+          <p>First Name</p>
+          <input class="form-input" type="text">
+        </div>
+        <div class="half2">
+          <p>Last Name</p>
+          <input class="form-input" type="text">
+        </div>
+        <!-- 그냥 이렇게 쓰면 float때문에 밑이 깔끔하지 않음.
+        clear: both 써야 보기 좋음 -->
+        <div style="clear: both"></div>
+        <div class="whole1">
+          <!-- 재사용하는 것이 좋음 -->
+          <p>Message</p>
+          <textarea class="form-input"></textarea>
+        </div>
+        <div>
+          <input id="sub" type="checkbox">
+          <label for="sub">Subscribe</label>
+          <!-- input id와 label for을 통일하면 라벨 누르면 인풋 누른 꼴 -->
+          <button class="y-button">SEND</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

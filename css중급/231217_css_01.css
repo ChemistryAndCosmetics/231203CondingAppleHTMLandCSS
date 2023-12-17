@@ -1,0 +1,23 @@
+@font-face {
+  font-family: '나눔스퀘어R';
+  src: url(../font/NanumSquareR.ttf);
+}
+/* 커스텀 폰트 넣는 법, 한글폰트는 용량이 커 1,2개만
+용량 줄이려면 .woff쓸 것
+google font에서 폰트파일 호스팅하기도 함. 이러면 트래픽 절약*/
+
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: '나눔스퀘어R', 'gulim', 'dotum', 'arial';
+}
+/* 폰트패밀리는 상속됨, 폰트 여러개 넣어야 에러떠도 해결
+font-weight 그냥 주면 볼드 안이쁨.
+굵은 폰트 따로 등록하는 것이 더 예쁘기는 함
+폰트 깨질 때 폰트 부드럽게 처리하려면 아래처럼 약간 회전.
+p, h4, h3, span {
+  transform: rotate(0.03deg);
+} */

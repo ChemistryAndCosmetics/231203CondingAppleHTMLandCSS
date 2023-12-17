@@ -1,0 +1,20 @@
+/* display: flex쓰면 박스 가로배치 쉬워짐 */
+
+.flex-container {
+  display: flex;
+  /* 부모에 주면 자식들이 flex받음 */
+  /* justify-content: center; 가운데 정렬 쉬움 */
+  /* flex-direction: row; 세로배치, 반응형 디자인에 유용 */
+  /* flex-wrap: wrap; width크면 밑으로 보내고 싶을 때 */
+  /* height: 500px; */
+  /* align-items: center; flex 이용시 상하정렬 */
+
+}
+
+.flex-item {
+  width: 100px;
+  /* 진짜로 100px 차지하지는 않고 최대 100px 차지 */
+  height: 100px;
+  background-color: grey;
+  margin: 5px;
+}
