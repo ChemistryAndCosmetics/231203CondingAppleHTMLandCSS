@@ -1,0 +1,26 @@
+.test {
+  width: 50vw;
+  /* vw: 브라우저 폭에 비례 */
+  height: 50vh;
+  /* vh: 브라우저 높이에 비례 */
+  /* rem: 기본폰트사이즈에 (16px) 비례.
+  요즘은 px외우기 귀찮을 때 빼고는 쓸데 없음 */
+  /* em: 내 폰트 사이즈에 비례 */
+  background: grey;
+}
+
+/* media query 문법. 반응형 웹디자인. 1200px이하일 떄는 아래 내용 추가 */
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 30px;
+  }
+}
+/* class 몇 개 적어도 상관 없음 */
+/* media query 역시 몇 개 적어도 상관 없음 */
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 20px;
+  }
+}
+/* 다른 사람들이 많이쓰는 breakpoint : 1200 992 768 576 */
