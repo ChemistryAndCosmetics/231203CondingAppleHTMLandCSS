@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container div {
+  float: left;
+  width: 25%;
+}
+/* 자식 셀렉터 */
+/* 1행 4열 */
+
+@media screen and (max-width: 992px) {
+  .container div {
+    float: left;
+    width: 33.4%;
+    /* 1/3부터 1/2까지의 비율이면 다 2행 2열 됨 */
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container div {
+    float: left;
+    width: 50.1%;
+    /* 1/2부터 1까지의 비율이면 다 4행 1열 됨 */
+    /* float: none; 해도 됨 */
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}

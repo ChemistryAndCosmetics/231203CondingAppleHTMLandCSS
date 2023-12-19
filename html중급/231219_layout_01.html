@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="../css중급/231219_css_01.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 이 것 있어야 반응형 레이아웃 가능 -->
+</head>
+<!-- 내가 짠 스타일이 이상하면? 당연히 css파일부터 뒤져야 함
+다만 그것이 쉽지 않으니 크롬 개발자 도구 사용
+확인하고 싶은 요소를 우클릭 후 검사 누르기
+그 html 요소에 적용된 모든 스타일을 확인할 수 있음
+적용 안되는 건 가로줄쳐있음
+중요: 위에 있을 수록 더 우선적으로 적용됨
+당연히 구글에서 수정하는 건 실제 반영 X
+스타일에서 박스를 보며 마진/패딩 역시 확인할 수 있음
+특히 검사할 페이지 요소 선택 누른 후(소형 파란 화살표 아이콘)
+요소에 마우스 올려두기만 해도 확인 가능 -->
+<body>
+  <div class="container">
+    <div>
+      <h3>Fast Shipping</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div>
+      <h3>Good Service</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div>
+      <h3>Free Coupons</h3>
+      <p>lorem ipsum</p>    
+    </div>
+    <div>
+      <h3>New Products</h3>
+      <p>lorem ipsum</p>    
+    </div>
+    <div style="float: none; clear: both;"></div>
+    <!-- 이 역시 container 안의 div이므로 none해준 후
+    clear: both해줘 깔끔하게 -->
+  </div> 
+</body>
+</html>
