@@ -1,0 +1,72 @@
+.shop-bg {
+  background-color: gray;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+  /* 가려주는 이미지와 잘 맞도록 block */
+}
+
+.overlay {
+  position: absolute;
+  /* 최종이 시작 가리게끔 */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  /* 최종 이미지를 반투명하게 하기 위해.
+  백그라운드 컬러를 반투명하게 함 */
+  transition: all 1s;
+  /* 위에 있는 스타일이 변하면 1초동안 변할 것 */
+}
+
+.overlay:hover {
+/* 마우스 올릴 떄 변하도록 띄어쓰기없이 hover */
+  opacity: 1;
+}
+
+.overlay2-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* hidden: 넘치는 부분 안보이게
+  이걸로 margin-top으로 인해 발생하는 박스넘침
+  문제를 해결 */
+  /* 투명 박스 만들었고, 여기에:hover하면
+  안에있는 overlay2등장 */
+}
+
+.overlay2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 100%;
+  /* 시작스타일 */
+  /* 이미지 아래에 반투명박스 위치하도록 margin-top */
+  transition: all 1s;
+  /* 움직이는 요소에 transition 주는 것 */
+  /* 위에 있는 스타일을 1초동안 변화시킬 것 */
+}
+
+.overlay2-wrap:hover {
+  /* 마우스 올릴 떄 변하도록 띄어쓰기없이 hover */
+  .overlay2 {
+    margin-top: 50%;
+    /* 이미 특징들 위에 적어줬으므로
+    margin-top만 적어줘도 충분 */
+  }
+}
