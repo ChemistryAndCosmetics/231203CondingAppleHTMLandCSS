@@ -1,0 +1,224 @@
+@font-face {
+  font-family: '나눔스퀘어R';
+  src: url(../font/NanumSquareR.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: '나눔스퀘어R', 'gulim', 'dotum', 'arial';
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 22px;
+}
+/* 기본적인세팅 */
+
+.landingpage-background {
+  background-image: linear-gradient(to bottom, aquamarine, steelblue);
+  /* 위에서 아래로 그래디언트 주기 */
+  height: 600px;
+  width: 100%;
+  padding: 30px;
+  /* 내부 텍스트와 거리를 두는 패딩 */
+  color: white
+}
+
+.landingpage-container {
+  max-width: 1200px;
+  /* 텍스트와 이미지 너무 떨어져있지 않게 */
+  margin: auto;
+}
+
+.landingpage-text {
+  float: left;
+  margin-top: 60px;
+  /* 글자(왼쪽) 이미지(오른쪽) 정렬 위해 */
+}
+
+.iphone {
+  width: 450px;
+  float: right;
+  margin-top: 80px;
+  /* 정확히 칸 맞추기 위해 margin-top: 80px로 */
+}
+
+.showmore {
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  cursor: pointer
+}
+
+.showmore:hover {
+  background-color: red;
+}
+
+.showmore:active {
+  background-color: blue;
+}
+
+@media screen and (max-width : 992px) {
+  /* 반응형 레이아웃 */
+  .iphone {
+    width: 300px;
+    display: block;
+    /* block: 주변 방해 안받음 */
+    float: none;
+    margin: auto;
+    /* 소형 화면에서는 오른쪽에 놓지 않고 자연스레 */
+    /* display: block을 주었기에 margin: auto로 인해 중앙으로 올 수 있음  */
+    /* 상위 특성으로 인해 float: none 없다면 우측으로 배열되었을 것 */
+    margin-top: 33px;
+    /* 바닥에 딱 맞게 */
+  }
+
+  .landingpage-text {
+    float: none;
+    margin-top: 30px;
+    text-align: center;
+    /* 이렇게 세팅해야 아이폰 이미지와 잘 맞음 */
+  }
+
+  .service-items {
+    display: flex;
+    flex-direction: column;
+    /* 이래야 세로로 배열 */
+  }
+  
+  .service-items div {
+    margin: auto;
+    /* 모든 div요소들 가운데 배열 */
+    width: 50.1%;
+    /* 1/2 초과 1이하에서 하나씩만 배열 */
+  }
+
+  .pf-container {
+    display: flex;
+    flex-direction: column;
+    /* 이래야 세로로 배열 */
+  }
+  
+  .pf-container div {
+    margin: auto;
+    /* 모든 div요소들 가운데 배열 */
+    width: 100%;
+  }
+}
+
+.service {
+  background-color: dodgerblue;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 50px 40px 50px 40px;
+  /* 순서는 상우좌하 (시계방향) */
+}
+
+.service-items {
+  display: flex;
+  /* flex: 그 자식요소들을 가로 정렬하겠다는 뜻 */
+}
+
+.service-items div {
+  width: 25%;
+}
+
+.service h5 {
+  margin-bottom: 5px;
+}
+
+.service-icon {
+  background-color: white;
+  color: dodgerblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+    /* border-box 쓰는게 요소 사이즈 맞추기 용이함 */
+  padding-top: 25px;
+  /* 높이 1/4지점 */
+}
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.pf-container {
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pf-item1 {
+  float: left;
+  width: 50%;
+  /* 이렇게 50%를 주었기에 4개가 2행 2열로 배치 */
+  height: 300px;
+  background-image: url(../img/portfolio-1.jpg);
+  /* 이미지를 백그라운드에 삽입 */
+  background-size: cover;
+  /* 이미지가 요소를 덮도록 하는게 cover */
+}
+
+.pf-item2 {
+  float: left;
+  width: 50%;
+  height: 300px;
+  background-image: url(../img/portfolio-2.jpg);
+  /* 이미지를 백그라운드에 삽입 */
+  background-size: cover;
+  /* 이미지가 요소를 덮도록 하는게 cover */
+}
+
+.pf-item3 {
+  float: left;
+  width: 50%;
+  height: 300px;
+  background-image: url(../img/portfolio-3.jpg);
+  /* 이미지를 백그라운드에 삽입 */
+  background-size: cover;
+  /* 이미지가 요소를 덮도록 하는게 cover */
+}
+
+.pf-item4 {
+  float: left;
+  width: 50%;
+  height: 300px;
+  background-image: url(../img/portfolio-4.jpg);
+  /* 이미지를 백그라운드에 삽입 */
+  background-size: cover;
+  /* 이미지가 요소를 덮도록 하는게 cover */
+}
+
+.pf-text {
+  color: white;
+  padding: 50px;
+  width: 100%;
+}
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border: 0px solid white;
+  transition: 1s;
+}
+
+.white-box:hover {
+  border: 25px solid white;
+}

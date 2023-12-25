@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="../css중급/231225_css_01.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 이 것 있어야 반응형 레이아웃 가능 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <!-- fontawesome 사용 -->
+</head>
+<body>
+  <div class="landingpage-background">
+    <div class="landingpage-container">
+      <div class="landingpage-text">
+        <h1>Landing Page for Apps</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+        <p>Voluptatum, rem, distinctio! Dolores doloremque.<p>
+        <button class="showmore">Show More</button>
+        <!-- 버튼 클래스를 "btn showmore"로, btn, showmore 이렇게 2개로 할 수도 있으나
+        이번에는 그냥 하나만 함 -->
+      </div>
+      <img src="../img/iphone.png" class="iphone">
+    </div>
+  </div>
+  <div style="clear: both"></div>
+  <!-- float 썼으므로 -->
+  <div class="service">
+    <div class="service-container">
+      <p style="margin-top: 5px;">services</p>
+      <h4 style="margin-top: 5px;">What We Offer</h4>
+      <div class="service-items">
+        <div>
+          <i class="fa-solid fa-mobile-screen-button fa-3x service-icon"></i>
+          <h5>Responsive</h5>
+        </div>
+        <div>
+          <i class="fa-solid fa-flask fa-3x service-icon"></i>
+          <h5>Experiment</h5>
+        </div>
+        <div>
+          <i class="fa-solid fa-bolt fa-3x service-icon"></i>
+          <h5>Quickness</h5>
+        </div>
+        <div>
+          <i class="fa-solid fa-earth-asia fa-3x service-icon"></i>
+          <h5>Global Shipping</h5>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div style="clear: both"></div>
+  <!-- float 썼으므로 -->
+  <div class="portfolio">
+    <p style="font-size: 15px; color: orange; margin-top: 5px;">PORTFOLIO</p>
+    <h4 style="margin-top: 5px;">What We Can Do</h4>
+    <div class="pf-container">
+      <div class="pf-item1" style="position: relative;">
+        <div class="white-box"></div>
+        <div class="pf-text">
+          <h5>STATIONARY</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <!-- 특이하게 이미지를 html에 삽입하지 않음 -->
+          <!-- CSS 백크라운드 이미지로 삽입할 것 -->
+        </div>      
+      </div>
+      <div class="pf-item2" style="position: relative;">
+        <div class="white-box"></div>
+        <div class="pf-text">
+          <h5>ICE CREAM</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>      
+      </div>
+      <div class="pf-item3" style="position: relative;">
+        <div class="white-box"></div>
+        <div class="pf-text">
+          <h5>STRAWBERRIES</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>      
+      </div>
+      <div class="pf-item4" style="position: relative;">
+        <div class="white-box"></div>
+        <div class="pf-text">
+          <h5>WORKSPACE</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>   
+      </div>   
+    </div>
+  </div>
+  <div style="clear: both"></div>
+  <!-- float 썼으므로 -->
+</body>
+</html>
+<!-- 크롬 개발자 도구에서 다른 애니메이션 확인하면 좋음 -->
