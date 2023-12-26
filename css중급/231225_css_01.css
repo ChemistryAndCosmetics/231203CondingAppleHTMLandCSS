@@ -69,54 +69,6 @@ h4 {
   background-color: blue;
 }
 
-@media screen and (max-width : 992px) {
-  /* 반응형 레이아웃 */
-  .iphone {
-    width: 300px;
-    display: block;
-    /* block: 주변 방해 안받음 */
-    float: none;
-    margin: auto;
-    /* 소형 화면에서는 오른쪽에 놓지 않고 자연스레 */
-    /* display: block을 주었기에 margin: auto로 인해 중앙으로 올 수 있음  */
-    /* 상위 특성으로 인해 float: none 없다면 우측으로 배열되었을 것 */
-    margin-top: 33px;
-    /* 바닥에 딱 맞게 */
-  }
-
-  .landingpage-text {
-    float: none;
-    margin-top: 30px;
-    text-align: center;
-    /* 이렇게 세팅해야 아이폰 이미지와 잘 맞음 */
-  }
-
-  .service-items {
-    display: flex;
-    flex-direction: column;
-    /* 이래야 세로로 배열 */
-  }
-  
-  .service-items div {
-    margin: auto;
-    /* 모든 div요소들 가운데 배열 */
-    width: 50.1%;
-    /* 1/2 초과 1이하에서 하나씩만 배열 */
-  }
-
-  .pf-container {
-    display: flex;
-    flex-direction: column;
-    /* 이래야 세로로 배열 */
-  }
-  
-  .pf-container div {
-    margin: auto;
-    /* 모든 div요소들 가운데 배열 */
-    width: 100%;
-  }
-}
-
 .service {
   background-color: dodgerblue;
   width: 100%;
@@ -212,13 +164,64 @@ h4 {
 
 .white-box {
   position: absolute;
+  /* relative는 html에서 그 상위 div에 부여 */
   width: 100%;
   height: 100%;
   z-index: 2;
+  /* 가장 위에 놓아야 하므로 일부러 z인덱스 높게 */
   border: 0px solid white;
   transition: 1s;
 }
 
 .white-box:hover {
   border: 25px solid white;
+}
+/* 마치 이미지가 줄어드는 것과 같은 효과를 줌 */
+
+@media screen and (max-width : 992px) {
+  /* 반응형 레이아웃 */
+  .iphone {
+    width: 300px;
+    display: block;
+    /* block: 주변 방해 안받음 */
+    float: none;
+    margin: auto;
+    /* 소형 화면에서는 오른쪽에 놓지 않고 자연스레 */
+    /* display: block을 주었기에 margin: auto로 인해 중앙으로 올 수 있음  */
+    /* 상위 특성으로 인해 float: none 없다면 우측으로 배열되었을 것 */
+    margin-top: 33px;
+    /* 바닥에 딱 맞게 */
+  }
+
+  .landingpage-text {
+    float: none;
+    margin-top: 30px;
+    text-align: center;
+    /* 이렇게 세팅해야 아이폰 이미지와 잘 맞음 */
+  }
+
+  .service-items {
+    display: flex;
+    flex-direction: column;
+    /* 이래야 세로로 배열 */
+  }
+  
+  .service-items div {
+    margin: auto;
+    /* 모든 div요소들 가운데 배열 */
+    width: 50.1%;
+    /* 1/2 초과 1이하에서 하나씩만 배열 */
+  }
+
+  .pf-container {
+    display: flex;
+    flex-direction: column;
+    /* 이래야 세로로 배열 */
+  }
+  
+  .pf-container div {
+    margin: auto;
+    /* 모든 div요소들 가운데 배열 */
+    width: 100%;
+  }
 }

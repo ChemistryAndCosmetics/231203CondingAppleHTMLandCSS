@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  <!-- button, nav bar, card, carousel, modal 등 유용 -->
+    <!-- 반응형 레이아웃 만들 때 bootstrap이 매우 편리 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">안녕하세요</div>
+        <div class="col-4">안녕하세요</div>
+        <div class="col-md-4 order-1">안녕하세요</div>
+        <!-- col은 한 클래스에 여러개 써도 됨 -->
+        <!-- bootstrap은 모바일 먼저 만드는게 편함 -->
+        <!-- 12가 기준. col-6은 정확히 2등분, col-4는 정확히 3등분 -->
+        <!-- row 안에 col 넣으면 균일하게 분배 -->
+        <!-- md-4는 md(미디움) 사이즈 이상에서만 저렇게 적용해달라는 뜻 -->
+        <!-- md는 grid에서 기인 --> 
+        <!-- order-1은 가장 첫번째 순서로 정해줌 -->
+        <!-- 더 많은 예시는 bootstrap의 layout으로 -->
+      </div>
+    </div>
+    <!-- 아래부터 숙제 -->
+    <div class="container">
+      <div class="row">
+        <div class="card shadow col-md-6 col-lg-3">
+          <!-- width: 18rem은 피규어가 이상해져 지워줌. -->
+          <img src="../img/photo1.jpg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card shadow col-md-6 col-lg-3">
+          <img src="../img/photo1.jpg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card shadow col-md-6 col-lg-3">
+          <img src="../img/photo1.jpg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card shadow col-md-6 col-lg-3">
+          <img src="../img/photo1.jpg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <!-- 모바일은 1열이므로 ""으로 처리 (아무것도 없는) -->
+        <!-- 태블릿은 2열이므로 col-md-6 -->
+        <!-- PC는 4열이므로 col-lg-3 -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 order-md-2">
+          <img src="../img/author.png" width="100%">
+          <!-- 이로 인해 width는 col에의해 정해진 칸의 100%을 차지 -->
+        </div>
+        <div class="col-10 col-md-5 order-md-1 text-md-end">
+          <!-- text-end : 우측정렬 -->
+          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="col-md-5 order-md-3"></div> 
+        <!-- 마지막 div는 모바일 디자인에서는 필요 없음 -->
+      </div>
+      <div class="row">
+        <div class="col-2 order-md-2">
+          <img src="../img/author2.png" width="100%">
+          <!-- 이로 인해 width는 col에의해 정해진 칸의 100%을 차지 -->
+        </div>
+        <div class="col-10 col-md-5 order-md-3">
+          <!-- text-end : 우측정렬 -->
+          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="col-md-5 order-md-1"></div> 
+        <!-- 마지막 div는 모바일 디자인에서는 필요 없음 -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- 이 자바스크립트 소스 반드시 필요 -->
+    <!-- css쉽게 덮어쓰고 수정하는 법 -->
+    <!-- 1.같은 클래스명으로 더 밑에 작성하면 됨 -->
+    <!-- 미디어 쿼리도 하단에 작성하는 게 그 이유 -->
+    <!-- 2.점수높이기(비추) (id를 넣거나 직접 html에 스타일을 넣거나
+    혹은 스타일 이후 !important넣거나 ex) red !important;) -->
+    <!-- 3.specificity 점수 높이기 ex) .main-background .custom 이렇게
+    클래스 2개 - 이러면 위에 있어도 적용됨.
+    css에서 div, p 이런거 추가로 적어서 우선순위 점수 높여도 됨 -->
+    <!-- 좋은 코드? 1. 나중에 수정/관리 쉬우면 좋음 -->
+    <!-- 2. 확장성 좋으면 좋은 코드 -->
+    <!-- bootstrap 클래스는 덮어쓰지 않고 클래스를 따로 추가함 -->
+  </body>
+</html>
