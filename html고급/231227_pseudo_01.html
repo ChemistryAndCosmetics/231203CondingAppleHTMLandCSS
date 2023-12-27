@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="../css고급/231227_css_01.css" rel="stylesheet">
+</head>
+<body style="margin: 0px;">
+  <!-- 기본적으로 body에 마진있으므로 -->
+  <div class="main-background">
+    <h4 class="main-title">신발사세요</h4>
+    <div class="text-box">
+      <p class="pseudo">멋진 신발 싸게 파니까 어서 구입하세요
+        빨리 안사면 사람들이 다 사갈테니 빠르게 오시기를 바랍니다
+      </p>
+    </div>
+  <div class="eclipse" style=" margin-top: 60px;">
+    <p>배경과 겹치는 박스를 만들자</p>
+  </div>
+  <br>
+  <div class="eclipse" style="padding: 50px;"">
+    <!-- 패딩이 있어 box-sizing: border-box 없으면 박스폭 맥스 설정한 600 넘어감 -->
+    <p>배경과 겹치는 박스를 만들자</p>
+  </div>
+  <div>
+    <input type="file" class="input-file">
+    <!-- file 업로드 버튼 스타일링? 여기에서 바로 하기 어려움
+      이 역시 pseudo-element로 -->
+      <!-- 문제는 버튼이랑 글자가 각각 생성 (파일 선택 / 선택된 파일 없음) -->
+      <!-- 이는 shadow DOM 때문 -> 실제로 숨겨진 span태그가 자동 생성-->
+    <input type="file" style="background: skyblue">
+      <!-- span에만 스타일 적용되므로 btn에만 효과주지 못함 -->
+      <!-- 따로 이를 해결하는 방법 있음 (input[type=file])-->
+    <button class="main-button">구매</button>
+  </div> 
+</div>
+</body>
+</html>
