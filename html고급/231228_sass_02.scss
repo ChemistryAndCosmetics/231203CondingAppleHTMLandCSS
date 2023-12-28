@@ -1,0 +1,77 @@
+.sh-list {
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid white;
+  }
+  .active {
+    background: skyblue;
+    color: white;
+  }
+}
+
+%alert-box {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: green;
+  color: white;
+  margin-top: 5px
+}
+
+.alert-box-g {
+  @extend %alert-box;
+  background: green;
+}
+
+.alert-box-o {
+  @extend %alert-box;
+  background: orange;
+}
+
+.alert-box-sb {
+  @extend %alert-box;
+  background: skyblue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@mixin 행렬($빈칸) {
+  float: left;
+  padding: 15px;
+  width: $빈칸;
+}
+
+@mixin tablet {
+  @media (min-width: 992px) {
+    @include 행렬(100%/2);
+  }
+}
+// 이런식으로 반응형 만들어 줌
+
+.row .col-md-6 {
+  @include tablet;
+}
+
+
+.row .col-1 {
+  @include 행렬(100%/12);
+}
+
+.row .col-2 {
+  @include 행렬(100%/6);
+}
+
+.row .col-3 {
+  @include 행렬(100%/4);
+}
+
+.row .col-4 {
+  @include 행렬(100%/3);
+}
+
+.row .col-6 {
+  @include 행렬(100%/2);
+}

@@ -1,0 +1,72 @@
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid white;
+}
+.sh-list .active {
+  background: skyblue;
+  color: white;
+}
+
+.alert-box-sb, .alert-box-o, .alert-box-g {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: green;
+  color: white;
+  margin-top: 5px;
+}
+
+.alert-box-g {
+  background: green;
+}
+
+.alert-box-o {
+  background: orange;
+}
+
+.alert-box-sb {
+  background: skyblue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .row .col-md-6 {
+    float: left;
+    padding: 15px;
+    width: 50%;
+  }
+}
+
+.row .col-1 {
+  float: left;
+  padding: 15px;
+  width: 8.3333333333%;
+}
+
+.row .col-2 {
+  float: left;
+  padding: 15px;
+  width: 16.6666666667%;
+}
+
+.row .col-3 {
+  float: left;
+  padding: 15px;
+  width: 25%;
+}
+
+.row .col-4 {
+  float: left;
+  padding: 15px;
+  width: 33.3333333333%;
+}
+
+.row .col-6 {
+  float: left;
+  padding: 15px;
+  width: 50%;
+}/*# sourceMappingURL=231228_sass_02.css.map */

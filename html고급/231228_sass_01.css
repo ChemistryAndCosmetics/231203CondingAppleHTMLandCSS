@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: blue;
+  font-size: 14px;
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+  color: 서브칼라;
+}
+
+.main-bg {
+  width: 100px;
+}
+.main-bg h4 {
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}
+
+.btn-red, .btn-blue {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: brown;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}/*# sourceMappingURL=231228_sass_01.css.map */

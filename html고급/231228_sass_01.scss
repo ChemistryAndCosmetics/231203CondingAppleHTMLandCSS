@@ -1,0 +1,71 @@
+@use 'reset';
+// 다른 파일 import하는 기능. @import는 css에도 있음
+// 굳이 컴파일 할필요 없으므로 파일 앞에 언더바(_) 붙임
+
+// 어려운 단어 기억해야 할 떄 아래와 같이 변수분법 씀
+$메인칼라 : blue;
+$서브칼라 : white;
+$기본사이즈 : 16px;
+
+// sass 확장자도 가능하나 scss가 더 익숙
+
+.background {
+  background-color: $메인칼라;
+  font-size: $기본사이즈 - 2px;
+  // 이렇게도 할 수 있음 (사칙연산 가능)
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+color: 서브칼라
+}
+
+.main-bg {
+  width: 100px;
+  h4 {
+    font-size: 16px;
+  }
+  button {
+    color: red;
+  }
+}
+// 괄호 안에 다시 선택자 넣는 nesting 문법
+// 2개이상 중첨은 비추
+
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+// 임시클래스. 이 단독으로는 컴파일되지 않음
+
+.btn-blue {
+  @extend %btn;
+  background-color: blue;
+}
+
+.btn-red {
+  @extend %btn;
+  background-color: red;
+}
+
+@mixin 폰트스타일($구멍){
+  font-size: $구멍;
+  // 일부러 이렇게 만들어 변화줄수도 있음
+  // 폰트스타일($구멍1, $구멍2) 이렇게 쓸수도 있음
+  // 즉 긴코드를 가변적으로 만듬
+  letter-spacing: -1px;
+}
+// mixin을 변수문법처럼 사용할 수 있음
+
+h2 {
+  @include 폰트스타일(40px);
+  // @include써서 $구멍을 채워줌
+  color: reset.$메인color;
+  // 이렇게 해서 use해줌
+}
+
+h3 {
+  @include 폰트스타일(30px)
+}
