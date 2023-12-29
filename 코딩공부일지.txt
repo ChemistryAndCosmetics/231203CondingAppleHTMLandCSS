@@ -80,4 +80,19 @@ Portfolio 실습 2 : SNS Profile (해설편)
 
 23년 12월 27일
 약간 쓸데없는 Pseudo-element
-딥다크한 어둠의 공간 Shadow DOM만든 사이트 발행하기
+딥다크한 어둠의 공간 Shadow DOM
+만든 사이트 발행하기
+까지 봄
+
+23년 12월 28일
+쉽게 배우는 Sass 기초 1편 : 셋팅
+쉽게 배우는 Sass 2편 : 핵심문법
+쉽게 배우는 Sass 3편 : Mixin, use 등
+쉽게 배우는 Sass : 숙제 해설
+HTML video, audio 다루기
+까지 봄
+
+23년 12월 29일
+transform & animation 으로 매끄러운 애니메이션 만들기
+transform & animation 숙제 해설 (움직이는 메뉴)
+까지 봄
