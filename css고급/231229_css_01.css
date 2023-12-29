@@ -1,0 +1,120 @@
+.ani-text {
+  /* transform: rotate(360deg);
+  transform: translateX(100px); */
+  /* 이외에도 많음 */
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+@keyframes 왔다갔다 {
+  0% {
+      transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/* 특정한 패턴을 만들 때는 keyframe 쓰면 좋음 */
+
+.btnp {
+  width: 100px;
+  margin: auto;
+}
+
+.rbtn:hover {
+  animation-name: 흔들흔들;
+  animation-duration: 1s;
+}
+
+@keyframes 흔들흔들 {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: translateX(0deg);
+  }
+}
+
+.plus {
+  text-align: center;
+  font-size: 50px;
+  width: 70px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.plus:hover {
+  animation-name: 요리조리;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* 이러면 계속 바뀐 채로 유지 */
+}
+
+@keyframes 요리조리 {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(60deg) scale(2);
+  }
+  /* 요소 2개를 쓸 수도 있음 */
+}
+
+.ani-navbar {
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  text-align: right;
+  /* 초기에 오른쪽에 글자 있으므로 */
+  transform: translateX(-175px);
+  transition: all 1s;
+  /* 초기에 가려져 있으므로 */
+}
+/* 검은 박스, 메뉴글자 변화는
+원-웨이 이므로 굳이 키프레임 쓸 필요 없음 */
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@keyframes 빙글빙글 {
+  0% {
+    transform: translateX(-100px);
+    /* 초기에 왼쪽에 있으므로 */
+  }
+  50% {
+    transform: translateX(50px) skewX(-60deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.ani-navbar:hover p {
+  /* p 태그에만 적용되어야 하므로 */
+  animation-name: 빙글빙글;
+  animation-duration: 1s;
+}
