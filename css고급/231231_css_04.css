@@ -1,0 +1,53 @@
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  background: cornflowerblue;
+  position: fixed;
+  z-index: 5;
+  color : white;
+  transition : all 1s;
+  transform: translateX(-100px);
+}
+
+.sidebar:hover {
+  transform: translateX(0px);
+}
+
+.sidebar i {
+  transition: all 1s;
+  transform: translateX(100px);
+}
+.sidebar:hover i {
+  transform: translateX(0px);
+} 
+
+이렇게 sidebar와 그 안의 i를 나누어 주어야
+/* 원하는 대로 효과를 줄 수 있음 */
+
+.sidebar div {
+  margin : 10px 0px 0px 10px;
+}
+.content {
+  margin-left : 60px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.badge {
+  position : absolute;
+  top: 0px;
+  left: 15px;
+}
+
+.input-animation{
+  width: 150px;
+  transition: all 1s;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
+.input-animation:focus {
+  width: 300px;
+}
